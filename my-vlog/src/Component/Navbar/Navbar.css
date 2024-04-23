@@ -1,0 +1,91 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-toggler {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-toggler-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-right: 20px;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.logout-btn {
+    margin-left: auto;
+}
+
+.logout-btn button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 760px) {
+    .navbar-links {
+        display: none; /* Initially hide links */
+        position: absolute;
+        top: 100%; /* Align dropdown below navbar */
+        left: 0; /* Align dropdown with navbar */
+        background-color: #333; /* Match navbar background */
+        width: 100%; /* Take full width */
+    }
+
+    .navbar-links.open {
+        display: flex; /* Show links when open */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logout-btn {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+}
+
+@media (min-width: 760px) {
+    .navbar {
+        justify-content: center;
+    }
+}

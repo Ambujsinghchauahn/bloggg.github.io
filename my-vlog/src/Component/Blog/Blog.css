@@ -1,0 +1,49 @@
+.blog-banner {
+    width: 98.5vw;
+    height: 70vh;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+.blog-heading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.blog-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.blog-image:hover {
+    transform: scale(1.1);
+}
+
+.blog-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.blog-image-container:hover .blog-image-overlay {
+    opacity: 1;
+}
+
+.blog-image-description {
+    margin: 0;
+}

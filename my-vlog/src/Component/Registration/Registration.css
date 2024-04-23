@@ -1,0 +1,61 @@
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../Assets/Backgrd.jpeg');
+    background-size: 100vw 100vh; /* Ensure the image covers the entire viewport */
+  background-position: center;
+  }
+  
+  .card {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .input-container {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .input-field {
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    padding: 10px;
+    border: 1px solid #ced4da; /* Added border */
+    border-radius: 5px; /* Added border radius */
+    font-size: 16px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
